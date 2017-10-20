@@ -1,0 +1,59 @@
+
+/*Ejemplo F: Mediante un slector id, la caja a y b tienen la posición en absolute. Toman como referencia su elemento contenedor, en este caso es body. Por ello se expanden tan ancho como sea la pantalla del navegador. Utiliza la propiedad de la compensación al no incluir ninguna medidad de ancho, ya que solo estableciendo las propiedades top, right, bottom y left, la imagen se estira  
+#box_a { 
+    position: absolute; 
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	left: 10px; 
+	background: red; 
+}
+#box_b { 
+	position: absolute; 
+	top: 20px;
+	right: 20px; 
+	bottom: 20px; 
+	left: 20px; 
+	background: blue;
+}
+
+*/
+
+/*Ejemplo H: Se establecen dos columnas a todo lo ancho de la página. Box_a tiene un valor de 20%, pero referente a su contenedor de body. En este caso sería 20% de body. Así también  box_b, se desplaza un 80% a la derecha de su contenedor body
+
+#box_a { 
+    position: absolute; 
+	top: 0;
+	right: 20%;
+	bottom: 0;
+	left: 0;
+	background: red; 
+}
+#box_b { 
+	position: absolute; 
+	top: 0;
+	right: 0; 
+	bottom: 0; 
+	left: 80%; 
+    background: blue;
+}
+*/
+
+/*Ejemplo H-2:Es el box_b quien tiene su posición establecido en absolute; seguriá tomando de referencia body; ya que es su único contenedor. Por lo tanto se ha desplazado 100px a la derecha de body.  */
+
+#box_a { 
+	width: 200px;
+	height: 200px;
+	background: #ee3e64;
+}
+#box_b { 
+    position: absolute;
+
+ /*Ejemplo H-3: Agregando una compensación superior, causamos que box_b de color azul suba hasta la parte superior*/
+    top: 0;           
+	left: 100px;
+	width: 200px;
+	height: 200px;
+	background: #44accf;
+}
+ 
